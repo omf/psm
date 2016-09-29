@@ -28,7 +28,8 @@ Members:
   - `add_state(state)`
   - `get_state(id)`
   - `set_initial_state(state)`
-
+  - `run()`
+  
 ## State
 ![Structure](https://github.com/omf/psm/blob/master/images/state.png)
 
