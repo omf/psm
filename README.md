@@ -1,7 +1,4 @@
-# psm
-Python State Machine
-
-PSM - Python State Machine
+# PSM - Python State Machine
 
 # Descripción
 This is a framework for defining state machines using Python.
