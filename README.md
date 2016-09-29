@@ -144,7 +144,9 @@ Members:
  - `RetryState(id, stateMachine, timeout, retries)`
  - `set_ok_transition(okCondition, toState)`
  - `set_retry_error_transition(retryErrorCondition, retryToState, errorToState)`
+
 ___
+
 # Example: Flip-Flop
 ![Structure](https://github.com/omf/psm/blob/master/images/flipflop.png)
 
