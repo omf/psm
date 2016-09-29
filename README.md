@@ -111,7 +111,7 @@ Decrements counter 't' until zero. At zero returns False.
 ## PassThrough
 ![Structure](https://github.com/omf/psm/blob/master/images/passthrough.png)
 
-It's composed by a State and one TrueCondition. Used to perform some operations and continue to the next state.
+It's composed by a State and a TrueCondition. Used to perform some operations and continue to the next state.
 
 Members:
 
@@ -169,7 +169,7 @@ Steps:
 
 Code:
 
-    import epsm
+    import psm
     
     class FlipFlop(StateMachine):
         def __init__(self, id):
@@ -189,23 +189,23 @@ Code:
             aToB = StateTransition("A to B")
             bToA = StateTransition("B to A")
     
-    # two conditions
-    i0 = LambdaCondition("i == 0", lambda SM: SM.i == 0)
-    i1 = LambdaCondition("i == 1", lambda SM: SM.i == 1)
+            # two conditions
+            i0 = LambdaCondition("i == 0", lambda SM: SM.i == 0)
+            i1 = LambdaCondition("i == 1", lambda SM: SM.i == 1)
     
-    # assinging conditions to transitions
-    stayA.add_condition(i0)
-    stayB.add_condition(i1)
-    aToB.add_condition(i1)
-    bToA.add_condition(i0)
+            # assinging conditions to transitions
+            stayA.add_condition(i0)
+            stayB.add_condition(i1)
+            aToB.add_condition(i1)
+            bToA.add_condition(i0)
     
-    # assinging transitions to states
-    A.set_stay_transition(stayA)
-    A.add_state_transition(aToB, B)
-    B.set_stay_transition(stayB)
-    B.add_state_transition(bToA, A)
+            # assinging transitions to states
+            A.set_stay_transition(stayA)
+            A.add_state_transition(aToB, B)
+            B.set_stay_transition(stayB)
+            B.add_state_transition(bToA, A)
     
-    self.set_initial_state(A)
+            self.set_initial_state(A)
     
 Test:
 
