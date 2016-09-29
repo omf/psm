@@ -158,12 +158,12 @@ Element identification:
 
 Steps:
 
-1. States are created
-2. Transitions are created
-3. Conditions are created
-4. Conditions are assigned to Transitions
-5. Transitions are assigned to States
-6. An initial state is specified
+  1. States are created
+  2. Transitions are created
+  3. Conditions are created
+  4. Conditions are assigned to Transitions
+  5. Transitions are assigned to States
+  6. An initial state is specified
 
 Code:
 
