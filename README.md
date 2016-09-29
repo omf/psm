@@ -1,6 +1,6 @@
 # PSM - Python State Machine
 
-# Descripción
+# Description
 This is a framework for defining state machines using Python.
 
 Inputs to the state machine should be evaluated on transition states and outputs should be evaluated on states (Moore).
@@ -165,7 +165,7 @@ Steps:
 5. Transitions are assigned to States
 6. An initial state is specified
 
-Code
+Code:
 
     import epsm
     
